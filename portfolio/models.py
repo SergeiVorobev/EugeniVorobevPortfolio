@@ -15,3 +15,17 @@ class MyApp(models.Model):
     class Meta:
         verbose_name_plural = 'my apps'
         ordering = ['name']
+
+class Certificate(models.Model):
+    name2 = models.CharField(max_length=64, unique=True)
+    desc2 = models.TextField(default='', blank=True)
+    image2 = models.ImageField(upload_to='certificates')
+    created_at2 = models.DateTimeField(auto_now_add=True)
+    created_by2 = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name='certificates')
+
+    def __str__(self):
+        return f'{self.id} {self.name2}'
+
+    class Meta:
+        verbose_name_plural = 'certificates'
+        ordering = ['name2']

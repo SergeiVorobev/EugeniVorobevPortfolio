@@ -60,22 +60,18 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    {% for app in my_apps %}
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal{{ app.id }}">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{{ app.image.url }}" alt="" />
-                        </div>
-                    </div>
-                    {% endfor %}
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-11 ms-auto"><p class="lead">Изучив ваш сайт, гарантирую: привлекательную презентацию вашего товара или услуг, особую структуру текста для воздействия на потенциальных клиентов, формирование положительного имиджа компании; тематические статьи не менее 95% оригинальности текста, с использованием ключевых слов (ключей).
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+
                 </div>
             </div>
         </section>
-        <!-- Portfolio Section-->
+
+    <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
@@ -114,16 +110,16 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
+                <!-- Certificates Grid Items-->
                 <div class="row justify-content-center">
-                    {% for app in my_apps %}
-                    <!-- Portfolio Item 1-->
+                    {% for c in certificates %}
+                    <!-- Certificate Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal{{ app.id }}">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="certificates-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificatesModal{{ c.id }}">
+                            <div class="certificates-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="certificates-item-caption-content text-center text-black-50"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="{{ app.image.url }}" alt="" />
+                            <img class="img-fluid" src="{{ c.image2.url }}" alt="" />
                         </div>
                     </div>
                     {% endfor %}
@@ -144,17 +140,7 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    {% for app in my_apps %}
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal{{ app.id }}">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{{ app.image.url }}" alt="" />
-                        </div>
-                    </div>
-                    {% endfor %}
+
                 </div>
             </div>
         </section>
