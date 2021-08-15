@@ -30,11 +30,11 @@ class Certificate(models.Model):
         verbose_name_plural = 'certificates'
         ordering = ['name2']
 
-class Contact(models.Model):
-    name = models.CharField(max_length=200)
-    email = models.EmailField()
-    phone = models.CharField(max_length=50)
-    message = models.TextField()
-
-    def __str__(self):
-        return self.name
+# class Contact(models.Model):
+#     name = models.CharField(max_length=200)
+#     email = models.EmailField()
+#     phone = models.CharField(max_length=50)
+#     message = models.TextField()
+#
+#     def __str__(self):
+#         return self.name
