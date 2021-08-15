@@ -17,7 +17,6 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">SEO-копирайтер #копирайтинг #copywriting #seo</p>
-{#              <img class="bg obj-fit-cover" src="{% static 'assets/img/typewriter.jpg' %}" alt="...">#}
 
             </div>
         </header>
@@ -35,9 +34,10 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Пишу и, по желанию Заказчика, публикую тематические статьи на их сайтах, с целью повышения рейтинга этих сайтов в поисковых системах, проведения рекламы и повышения продаж товаров и услуг, отслеживания конкурентной активности других сайтов-конкурентов.
+                    <div class="col-lg-3 ms-auto"><p class="lead">Пишу и, по желанию Заказчика, публикую тематические статьи на их сайтах, с целью повышения рейтинга этих сайтов в поисковых системах, проведения рекламы и повышения продаж товаров и услуг, отслеживания конкурентной активности других сайтов-конкурентов.
                     </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Имею высшее инженерное образование. В 2000 году курсы при Московской академии предпринимательства при Правительстве Москвы (международные экономические отношения), в 2007 году закончил Харпер колледж (США, штат Иллинойс). Имею опыт работы государственной и муниципальной службы на муниципальном, региональном и федеральном уровнях. Последние годы занимаюсь SEO-копирайтингом.</p></div>
+                    <div class="col-lg-3 me-auto"><p class="lead">Имею высшее инженерное образование. В 2000 году курсы при Московской академии предпринимательства при Правительстве Москвы (международные экономические отношения), в 2007 году закончил Харпер колледж (США, штат Иллинойс). Имею опыт работы государственной и муниципальной службы на муниципальном, региональном и федеральном уровнях. <br/>Последние 10 лет занимаюсь SEO-копирайтингом.</p></div>
+
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -59,15 +59,17 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-11 ms-auto"><p class="lead">Изучив ваш сайт, гарантирую: привлекательную презентацию вашего товара или услуг, особую структуру текста для воздействия на потенциальных клиентов, формирование положительного имиджа компании; тематические статьи не менее 95% оригинальности текста, с использованием ключевых слов (ключей).
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
 
+                <div class="row"></div>
+                <div class="col-lg-14 ms-auto"><p class="lead">Изучив ваш сайт, гарантирую: привлекательную презентацию вашего товара или услуг, особую структуру текста для воздействия на потенциальных клиентов, формирование положительного имиджа компании; тематические статьи не менее 95% оригинальности текста, с использованием ключевых слов (ключей).</p>
                 </div>
+                <div class="row">
+                    <div class="col-lg-11 ms-auto center-align"><p class="lead">SEO-копирайтинг</p></div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -82,6 +84,12 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+
+                <div class="row">
+                    <div class="col-lg-11 ms-auto"><p class="lead">За последние годы мною были написаны более тысячи статей на самые разнообразные тематики. Все статьи были написаны с использованием ключевых слов, статьи были проверены на уникальность.
+                </div>
+                <p></p>
+
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     {% for app in my_apps %}
@@ -100,7 +108,7 @@
         </section>
 
         <!-- Certificates Section-->
-        <section class="page-section bg-primary text-white mb-0" id="certificates">
+        <section class="page-section portfolio bg-primary text-white mb-0" id="certificates">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white  mb-0">Сертификаты</h2>
@@ -115,9 +123,9 @@
                     {% for c in certificates %}
                     <!-- Certificate Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="certificates-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificatesModal{{ c.id }}">
-                            <div class="certificates-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="certificates-item-caption-content text-center text-black-50"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificatesModal{{ c.id }}">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-black-50"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="{{ c.image2.url }}" alt="" />
                         </div>
@@ -139,8 +147,8 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-
+                <div class="row">
+                    <div class="col-lg-11 ms-auto"><p class="lead">За последние годы мною были написаны более тысячи статей на самые разеообразнве тематики. Все статьи были написаны с использованием ключевых слов, статьи были проверены на уникальность.
                 </div>
             </div>
         </section>
@@ -165,7 +173,11 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+{#                        <div class="message">#}
+{#                            <p>До связи, {{ name }}</p>#}
+{#                        </div>#}
+                        <form class="" method="post" action="{% url 'base_page' %}">
+                            {% csrf_token %}
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -195,9 +207,10 @@
                             <!---->
                             <!-- This is what your users will see when the form-->
                             <!-- has successfully submitted-->
+
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Письмо усрешно отправлено!</div>
+                                    <div class="fw-bolder">{{ name }}, Ваше письмо успешно отправлено!</div>
                                     To activate this form, sign up at
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
@@ -209,8 +222,10 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
+
                             <div class="text-center mt-4">
-                            <button class="btn btn-secondary btn-xl disabled" id="submitButton" type="submit">Отправить</button>
+                                <input type="submit" class="btn btn-secondary btn-xl " value="Отправить">
+{#                                 <button class="btn btn-secondary btn-xl disabled" id="submitButton" type="submit">Отправить</button>#}
                             </div>
                         </form>
                     </div>
@@ -256,4 +271,42 @@
             </div>
         </div>
      {% endfor %}
+
+    <!-- Certificates Modals-->
+    {% for c in certificates %}
+        <!-- Certificates Modal 1-->
+        <div class="portfolio-modal modal fade" id="certificatesModal{{ c.id }}" tabindex="-1" aria-labelledby="certificatesModal{{ c.id }}" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Certificates Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">{{ c.name2 }}</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Certificates Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{{ c.image2.url }}" alt="..." />
+                                    <!-- Certificates Modal - Text-->
+                                    <p class="mb-4">{{ c.desc2 }}</p>
+
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     {% endfor %}
 {% endblock %}
+
