@@ -176,12 +176,18 @@
 {#                        <div class="message">#}
 {#                            <p>До связи, {{ name }}</p>#}
 {#                        </div>#}
-                        <div class="row">
-                            <div class="col-lg-11 ms-auto"><p class="lead">Я на связи - {{ name }}
+{#                        <div class="row">#}
+{#                            <div class="col-lg-11 ms-auto"><p class="lead">Я на связи - {{ name }}#}
 {#                                <br> {{ message2 }}#}
-                        </div>
-                        <p></p>
+{#                        </div>#}
+{#                        <p></p>#}
 
+                            <!-- ***** Breadcrumb Area End ***** -->
+                            <center>
+                                <h2>Спасибо {{ name }}!</h2>
+                                <p>Мы получили Ваше письмо и ответим скоро...</p>
+                                <br><br><br>
+                            </center>
                         <form class="" method="post" action="{% url 'base_page' %}">
                             {% csrf_token %}
                             <!-- Name input-->
