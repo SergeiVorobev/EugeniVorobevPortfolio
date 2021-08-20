@@ -152,6 +152,37 @@
                 </div>
             </div>
         </section>
+
+{#     <!-- ***** Breadcrumb Area End ***** -->#}
+{#        <div class="breadcrumbs-area bg-img bg-gradient-overlay" style="background-image: url({% static 'assets/img/me.png' %});">#}
+{#            <div class="container h-100">#}
+{#                <div class="row h-100 align-items-center">#}
+{#                    <div class="col-12">#}
+{#                        <h2 class="title">Контакты</h2>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="breadcrumb--con">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-12">#}
+{#                    <nav aria-label="breadcrumb">#}
+{#                        <ol class="breadcrumb">#}
+{#                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i>Домой</a></li>#}
+{#                            <li class="breadcrumb-item active" aria-current="page">Контакты</li>#}
+{#                        </ol>#}
+{#                    </nav>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <div style="text-align: center;">#}
+{#            <h2>Спасибо {{ name }}!</h2>#}
+{#            <p>Мы получили Ваше письмо и ответим скоро...</p>#}
+{#            <br><br><br>#}
+{#        </div>#}
+
         <!-- Contact Section-->
         <section class="page-section bg-primary text-white mb-0" id="contact">
             <div class="container">
@@ -163,31 +194,10 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-{#                        <div class="message">#}
-{#                            <p>До связи, {{ name }}</p>#}
-{#                        </div>#}
-{#                        <div class="row">#}
-{#                            <div class="col-lg-11 ms-auto"><p class="lead">Я на связи - {{ name }}#}
-{#                                <br> {{ message2 }}#}
-{#                        </div>#}
-{#                        <p></p>#}
-
-                            <!-- ***** Breadcrumb Area End ***** -->
-                            <center>
-                                <h2>Спасибо {{ name }}!</h2>
-                                <p>Мы получили Ваше письмо и ответим скоро...</p>
-                                <br><br><br>
-                            </center>
                         <form class="" method="post" action="{% url 'base_page' %}">
                             {% csrf_token %}
                             <!-- Name input-->
