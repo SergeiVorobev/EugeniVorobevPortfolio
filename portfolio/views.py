@@ -23,16 +23,16 @@ def home(request):
         m_email = request.POST['email']
         m_phone = request.POST["phone"]
         m_message = request.POST["message"]
-        context['name'] = m_name
+        # context['name'] = m_name
         # context['message2'] = 'Я скоро свяжусь с Вами'
 
 
         # send an email
         send_mail(
             m_name + ' with phone ' + m_phone, # subject
-            m_email, # message
+            m_message, # message
             # m_phone, # from email
-            m_message, # from email
+            m_email, # from email
             ['evorob4@mail.ru'],# to email
         )
         # cont.name = name

@@ -177,11 +177,13 @@
 {#            </div>#}
 {#        </div>#}
 {##}
-{#        <div style="text-align: center;">#}
-{#            <h2>Спасибо {{ name }}!</h2>#}
-{#            <p>Мы получили Ваше письмо и ответим скоро...</p>#}
-{#            <br><br><br>#}
-{#        </div>#}
+        {% if name %}
+        <div style="text-align: center;">
+            <h2>Спасибо {{ name }}!</h2>
+            <p>Мы получили Ваше письмо и ответим скоро...</p>
+            <br><br><br>
+        </div>
+        {% endif%}
 
         <!-- Contact Section-->
         <section class="page-section bg-primary text-white mb-0" id="contact">
