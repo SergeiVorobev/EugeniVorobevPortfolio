@@ -1,6 +1,4 @@
 # Project exclude paths
-/venv/
-/media/**
 /static/**
 !/media
 !/static
