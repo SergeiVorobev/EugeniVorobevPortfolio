@@ -1,2 +1,10 @@
 # Project exclude paths
 /venv/
+/media/**
+/static/**
+!/media
+!/static
+__pycashe__
+*/migrations/**
+!*/migrations
+!*/migrations/__init__.py
