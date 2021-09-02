@@ -1,1 +1,1 @@
-web: gunicorn EugeniVorobev.wsgi --log-file-
+web: gunicorn EugeniVorobev.wsgi
